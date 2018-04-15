@@ -1,0 +1,16 @@
+﻿{
+  "name": "Tab Controller",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Adds the ability to control tabs from external applications",
+  "background": {
+    "scripts":  ["background.js"] 
+  } ,
+  "icons": {
+    "128": "browsers-128.png"
+  },
+  "permissions": [
+    "nativeMessaging",
+    "tabs"
+  ]
+}

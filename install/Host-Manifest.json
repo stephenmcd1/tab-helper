@@ -1,0 +1,10 @@
+﻿{
+  "name": "com.stephentmcdaniel.tabhelperhost",
+  "description": "Tab Helper Native Host",
+  "path": "..\\src\\native-host\\TabHelperHost\\bin\\debug\\tabhelperhost.exe",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://ollmebiilbdgdoiameijjmdpakkgccgh/",
+    "chrome-extension://bpmgleddgmadhhfeekjcnfcgfeaklpbl/"
+  ]
+}
