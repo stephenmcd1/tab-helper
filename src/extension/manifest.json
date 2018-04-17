@@ -1,11 +1,17 @@
 ﻿{
   "name": "Tab Controller",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "manifest_version": 2,
   "description": "Adds the ability to control tabs from external applications",
   "background": {
-    "scripts":  ["background.js"] 
-  } ,
+    "scripts":  ["new_tab.js", "activate_tab.js", "native_host.js", "background.js"]
+  },
+  "browser_action": {
+    "default_icon": {
+      "128": "browsers-128.png"
+    },
+    "default_title": "Tab Controller"
+  },
   "icons": {
     "128": "browsers-128.png"
   },
