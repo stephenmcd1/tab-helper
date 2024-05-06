@@ -1,22 +1,24 @@
 ﻿{
-  "name": "Tab Controller",
-  "version": "1.3.0",
-  "manifest_version": 2,
-  "description": "Adds the ability to control tabs from external applications",
-  "background": {
-    "scripts":  ["new_tab.js", "activate_tab.js", "native_host.js", "background.js"]
-  },
-  "browser_action": {
-    "default_icon": {
-      "128": "browsers-128.png"
+    "name": "Tab Controller",
+    "version": "1.4.0",
+    "manifest_version": 3,
+    "description": "Adds the ability to control tabs from external applications",
+    "background": {
+        "service_worker": "background.js"
     },
-    "default_title": "Tab Controller"
-  },
-  "icons": {
-    "128": "browsers-128.png"
-  },
-  "permissions": [
-    "nativeMessaging",
-    "tabs"
-  ]
+    "action": {
+        "default_icon": {
+            "128": "browsers-128.png"
+        },
+        "default_title": "Tab Controller"
+    },
+    "icons": {
+        "128": "browsers-128.png"
+    },
+    "permissions": [
+        "nativeMessaging",
+        "tabs",
+        "storage"
+    ],
+    "optional_host_permissions": ["file:///*"]
 }
